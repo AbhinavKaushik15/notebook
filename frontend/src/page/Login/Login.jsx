@@ -9,7 +9,7 @@ const Login = () => {
   const navigate = useNavigate();
 
   const loginHandler = async () => {
-    const res = await fetch(`${import.meta.VITE_BACKEND_HOST_URL}/api/auth/login`, {
+    const res = await fetch(`${import.meta.env.VITE_BACKEND_HOST_URL}/api/auth/login`, {
       method: "POST",
       headers: {
         "content-type": "application/json",

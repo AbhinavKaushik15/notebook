@@ -11,7 +11,7 @@ const Signup = () => {
 
   const signupHandler = async () => {
     const res = await fetch(
-      `${import.meta.VITE_BACKEND_HOST_URL}/api/auth/signup`,
+      `${import.meta.env.VITE_BACKEND_HOST_URL}/api/auth/signup`,
       {
         method: "POST",
         headers: {
