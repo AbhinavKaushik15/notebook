@@ -9,13 +9,16 @@ const Login = () => {
   const navigate = useNavigate();
 
   const loginHandler = async () => {
-    const res = await fetch(`${import.meta.env.VITE_BACKEND_HOST_URL}/api/auth/login`, {
-      method: "POST",
-      headers: {
-        "content-type": "application/json",
-      },
-      body: JSON.stringify({ email, password }),
-    });
+    const res = await fetch(
+      `${import.meta.env.VITE_BACKEND_HOST_URL}/api/auth/login`,
+      {
+        method: "POST",
+        headers: {
+          "content-type": "application/json",
+        },
+        body: JSON.stringify({ email, password }),
+      }
+    );
 
     const loginData = await res.json();
     console.log(loginData);
@@ -33,7 +36,7 @@ const Login = () => {
 
   return (
     <div className="w-full h-screen bg-gradient-to-bl from-[#0f172a] via-[#1e1a78] to-[#0f172a]">
-      <div className="flex flex-col gap-14 absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 rounded-4xl w-[70vw] border border-white p-20">
+      <div className="flex flex-col gap-14 absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 rounded-4xl w-[90vw] lg:w-[50vw] border border-white py-14 px-8">
         <h1 className="text-4xl text-white text-center">Login</h1>
         <div className="flex flex-col gap-5">
           <input
@@ -57,7 +60,7 @@ const Login = () => {
           >
             Login
           </button>
-          <p className="text-white text-center text-lg">
+          <p className="text-white text-center text-md lg:text-lg">
             Don't have an account
             <Link className="text-[#a09cf4] hover:underline ml-1" to="/signup">
               Signup
