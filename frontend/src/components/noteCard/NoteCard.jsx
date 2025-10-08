@@ -15,7 +15,7 @@ const NoteCard = () => {
 
   return (
     <div className="lg:w-[100vw] min-h-screen flex flex-col items-center">
-      <div className="w-full flex items-center justify-center text-3xl underline text-white py-5 pt-40 lg:pt-8">
+      <div className="w-full flex items-center justify-center text-2xl lg:text-3xl text-white py-5 pt-40 lg:pt-8">
         All Notes
       </div>
 
@@ -26,7 +26,7 @@ const NoteCard = () => {
           <div className="w-4 h-4 rounded-full bg-blue-300 animate-bounce [animation-delay:-.5s]"></div>
         </div>
       ) : (
-        <div className="flex flex-col gap-5 py-7">
+        <div className="flex flex-col gap-5 py-1">
           {allNotes.length > 0 ? (
             allNotes.map((item, index) => {
               const { title, tag, description, _id } = item;
@@ -35,12 +35,12 @@ const NoteCard = () => {
               return (
                 <div
                   key={index}
-                  className="w-[80vw] border border-white text-white flex flex-col justify-center gap-5 p-6 rounded-4xl"
+                  className="w-[90vw] lg:w-[80vw] border border-white text-white flex flex-col justify-center gap-5 p-6 rounded-4xl"
                 >
-                  <h1 className="text-[3.9vw] sm:text-[3vw] font-[700]">
+                  <h1 className="text-[5.5vw] sm:text-[3vw] font-[700]">
                     {title}
                   </h1>
-                  <h1>{description}</h1>
+                  <h1 className="text-zinc-400">{description}</h1>
 
                   <div className="flex items-center justify-between">
                     <div className="tags w-[65vw] flex items-center gap-5 flex-wrap">

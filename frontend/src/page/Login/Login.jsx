@@ -36,7 +36,7 @@ const Login = () => {
 
   return (
     <div className="w-full h-screen bg-gradient-to-bl from-[#0f172a] via-[#1e1a78] to-[#0f172a]">
-      <div className="flex flex-col gap-14 absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 rounded-4xl w-[90vw] lg:w-[50vw] border border-white py-14 px-8">
+      <div className="flex flex-col gap-14 absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 rounded-4xl w-[90vw] lg:w-[50vw] border border-white py-14 px-5">
         <h1 className="text-4xl text-white text-center">Login</h1>
         <div className="flex flex-col gap-5">
           <input

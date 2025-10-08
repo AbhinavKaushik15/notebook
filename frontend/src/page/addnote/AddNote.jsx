@@ -9,7 +9,7 @@ const AddNote = () => {
 
   return (
     <Layout>
-      <div className="flex flex-col gap-14 absolute top-1/2 left-1/2 lg:left-[58vw] -translate-x-1/2 -translate-y-1/2 rounded-4xl w-[70vw] border border-white p-20">
+      <div className="flex flex-col gap-9 md:gap-14 absolute top-1/2 left-1/2 lg:left-[58vw] -translate-x-1/2 -translate-y-1/2 rounded-4xl w-[90vw] lg:w-[50vw] border border-white py-14 px-5 mt-14">
         <h1 className="text-4xl text-white text-center">Add Note</h1>
         <div className="flex flex-col gap-5">
           <input
@@ -27,7 +27,7 @@ const AddNote = () => {
             onChange={(e) => setTag(e.target.value)}
           />
           <textarea
-            className="w-full border border-white py-4 px-7 outline-none rounded-full placeholder:text-[3dadada] text-white text-lg"
+            className="w-full h-40 border border-white py-4 px-7 outline-none rounded-3xl placeholder:text-[3dadada] text-white text-lg"
             placeholder="Description"
             type="text"
             value={description}

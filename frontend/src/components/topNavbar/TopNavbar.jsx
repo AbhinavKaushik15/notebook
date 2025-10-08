@@ -11,7 +11,7 @@ const TopNavbar = () => {
       <div>
         <h1 className="text-3xl font-[700]">Notebook</h1>
       </div>
-      <div className="flex items-center gap-10 text-zinc-400">
+      <div className="flex items-center gap-7 md:gap-10 text-zinc-400">
         <Link className="border px-2 py-1 rounded-full" to="/">
           Home
         </Link>
