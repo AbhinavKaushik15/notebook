@@ -1,7 +1,7 @@
 import React from "react";
 
 const TopNavbar = () => {
-  return <div>Top navbar</div>;
+  return <div className="text-white">Top navbar</div>;
 };
 
 export default TopNavbar;

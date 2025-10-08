@@ -6,6 +6,7 @@ const MyState = (props) => {
   // getAllNotes
   const [loading, setLoading] = useState(false);
   const [allNotes, setAllNotes] = useState([]);
+  
   // add note
   const [title, setTitle] = useState("");
   const [tag, setTag] = useState("");
