@@ -1,19 +1,15 @@
 import { CirclePlus, CircleUser, House, LogOut } from "lucide-react";
-import toast from "react-hot-toast";
-import { Link, useNavigate } from "react-router-dom";
+import { useContext } from "react";
+import { Link } from "react-router-dom";
+import MyContext from "../../context/data/MyContext";
 
 const Sidebar = () => {
-  const navigate = useNavigate();
-
-  const logoutHandle = () => {
-    localStorage.clear("token");
-    toast.success("Logged out successfully.");
-    navigate("/login");
-  };
+  const context = useContext(MyContext);
+  const { logoutHandle } = context;
 
   return (
     <div className="h-screen border-r border-white bg-gradient-to-bl from-[#0f172a] via-[#1e1a78] to-[#0f172a] w-full px-5">
-      <h1 className="text-white text-2xl font-[700] pt-10 text-center">
+      <h1 className="w-full text-white text-2xl font-[700] text-center pt-10">
         NoteBook
       </h1>
       <div className="flex flex-col justify-center items-start gap-4 mx-auto pt-32">

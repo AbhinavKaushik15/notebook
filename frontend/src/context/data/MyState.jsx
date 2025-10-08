@@ -6,7 +6,7 @@ const MyState = (props) => {
   // getAllNotes
   const [loading, setLoading] = useState(false);
   const [allNotes, setAllNotes] = useState([]);
-  
+
   // add note
   const [title, setTitle] = useState("");
   const [tag, setTag] = useState("");
@@ -83,6 +83,14 @@ const MyState = (props) => {
     toast.success(noteData.success);
   };
 
+  const logoutHandle = () => {
+    localStorage.clear("token");
+    toast.success("Logged out successfully.");
+    setTimeout(() => {
+      window.location.href = `/login`;
+    }, 800);
+  };
+
   return (
     <MyContext.Provider
       value={{
@@ -97,6 +105,7 @@ const MyState = (props) => {
         setDescription,
         addNote,
         deleteNote,
+        logoutHandle,
       }}
     >
       {props.children}

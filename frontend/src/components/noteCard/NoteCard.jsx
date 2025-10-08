@@ -15,7 +15,7 @@ const NoteCard = () => {
 
   return (
     <div className="lg:w-[100vw] min-h-screen flex flex-col items-center">
-      <div className="w-full flex items-center justify-center text-3xl underline text-white py-5">
+      <div className="w-full flex items-center justify-center text-3xl underline text-white py-5 pt-40 lg:pt-8">
         All Notes
       </div>
 

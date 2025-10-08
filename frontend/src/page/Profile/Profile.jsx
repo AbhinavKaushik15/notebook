@@ -30,7 +30,7 @@ const Profile = () => {
 
   return (
     <Layout>
-      <div className="w-[100vw] h-screen flex flex-col gap-5 items-center p-20 mx-auto">
+      <div className="w-[100vw] h-screen pt-40 flex flex-col gap-5 items-center p-20 mx-auto">
         <CircleUser className="text-white w-24 h-24" />
         <div className="flex flex-col items-center gap-1">
           <h1 className="text-white text-4xl">{user.name}</h1>

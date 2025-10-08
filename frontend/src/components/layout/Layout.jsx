@@ -4,7 +4,7 @@ import Sidebar from "../sidebar/Sidebar.jsx";
 const Layout = ({ children }) => {
   return (
     <div className="bg-gradient-to-bl from-[#0f172a] via-[#1e1a78] to-[#0f172a] ">
-      <div className="md:hidden">
+      <div className="lg:hidden">
         <TopNavbar />
       </div>
 
