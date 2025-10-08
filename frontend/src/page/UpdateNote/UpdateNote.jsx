@@ -79,7 +79,7 @@ const UpdateNote = () => {
             value={tag}
             onChange={(e) => setTag(e.target.value)}
           />
-          <input
+          <textareay
             className="w-full border border-white py-4 px-7 outline-none rounded-full placeholder:text-[3dadada] text-white text-lg"
             placeholder="Description"
             type="text"
